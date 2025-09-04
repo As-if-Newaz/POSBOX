@@ -32,6 +32,9 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(50)]
         public string Barcode { get; set; }
 
+        [Column(TypeName = "VARCHAR"), StringLength(500)]
+        public string? ImageUrl { get; set; }
+
         [Required]
         public DateTime AddingDate { get; set; }
 
@@ -52,19 +55,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public DateTime CreatedAt { get; set; }
-
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string UpdatedBy { get; set; }
-
-
-        public DateTime? UpdatedAt { get; set; }
-
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string DeletedBy { get; set; }
-
-        public DateTime? DeletedAt { get; set; }
 
         public virtual Business Business { get; set; }
         [ForeignKey("Business")]

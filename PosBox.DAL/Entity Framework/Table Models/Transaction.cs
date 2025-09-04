@@ -47,12 +47,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public DateTime? UpdatedAt { get; set; }
 
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string DeletedBy { get; set; }
-
-        public DateTime? DeletedAt { get; set; }
-
         public virtual Business Business { get; set; }
         [ForeignKey("Business")]
         [Required]

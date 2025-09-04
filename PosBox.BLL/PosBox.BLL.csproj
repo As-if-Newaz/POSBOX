@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PosBox.DAL\PosBox.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
