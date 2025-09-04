@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class DiscardApplication
+    public class ProductDiscardApplication
     {
         public int Id { get; set; }
 

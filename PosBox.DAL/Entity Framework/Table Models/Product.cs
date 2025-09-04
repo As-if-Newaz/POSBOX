@@ -56,6 +56,11 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public DateTime CreatedAt { get; set; }
 
+        public virtual Category Category { get; set; }
+        [ForeignKey("Category")]
+        [Required]
+        public int CategoryId { get; set; } 
+
         public virtual Business Business { get; set; }
         [ForeignKey("Business")]
         [Required]

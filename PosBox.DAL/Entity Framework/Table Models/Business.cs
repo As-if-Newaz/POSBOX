@@ -30,14 +30,8 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Email { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string Role { get; set; }
-
 
         [Required]
         public bool IsActive { get; set; } //ISDELETED
@@ -49,7 +43,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(500)]
         public string Password { get; set; }
 
         [Required]
