@@ -11,7 +11,12 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public enum UserRole
         {
             Admin,
-            Manager,
+            Manager
+        }
+        public enum Language
+        {
+            English,
+            Bangla
         }
         public enum Theme
         {

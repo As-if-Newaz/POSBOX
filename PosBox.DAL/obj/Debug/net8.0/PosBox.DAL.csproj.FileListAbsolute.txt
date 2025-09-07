@@ -1,0 +1,15 @@
+D:\Projects\PosBox\PosBox.DAL\bin\Debug\net8.0\PosBox.DAL.deps.json
+D:\Projects\PosBox\PosBox.DAL\bin\Debug\net8.0\PosBox.DAL.runtimeconfig.json
+D:\Projects\PosBox\PosBox.DAL\bin\Debug\net8.0\PosBox.DAL.dll
+D:\Projects\PosBox\PosBox.DAL\bin\Debug\net8.0\PosBox.DAL.pdb
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.csproj.AssemblyReference.cache
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.AssemblyInfoInputs.cache
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.AssemblyInfo.cs
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.sourcelink.json
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.dll
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\refint\PosBox.DAL.dll
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.pdb
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\PosBox.DAL.genruntimeconfig.cache
+D:\Projects\PosBox\PosBox.DAL\obj\Debug\net8.0\ref\PosBox.DAL.dll

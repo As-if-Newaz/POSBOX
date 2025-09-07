@@ -1,0 +1,16 @@
+D:\Projects\PosBox\PosBox.BLL\bin\Debug\net8.0\PosBox.BLL.deps.json
+D:\Projects\PosBox\PosBox.BLL\bin\Debug\net8.0\PosBox.BLL.dll
+D:\Projects\PosBox\PosBox.BLL\bin\Debug\net8.0\PosBox.BLL.pdb
+D:\Projects\PosBox\PosBox.BLL\bin\Debug\net8.0\PosBox.DAL.dll
+D:\Projects\PosBox\PosBox.BLL\bin\Debug\net8.0\PosBox.DAL.pdb
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.csproj.AssemblyReference.cache
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.AssemblyInfoInputs.cache
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.AssemblyInfo.cs
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.csproj.CoreCompileInputs.cache
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.sourcelink.json
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.csproj.Up2Date
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.dll
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\refint\PosBox.BLL.dll
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\PosBox.BLL.pdb
+D:\Projects\PosBox\PosBox.BLL\obj\Debug\net8.0\ref\PosBox.BLL.dll

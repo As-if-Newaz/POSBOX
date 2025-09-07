@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
@@ -47,6 +48,13 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public string Password { get; set; }
 
         [Required]
+        public Language PreferredLanguage { get; set; }
+
+        [Required]
+        public Theme PreferredTheme { get; set; }
+
+
+        [Required]
         public int Cash { get; set; }
 
         [Required]
@@ -56,6 +64,8 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public DateTime CreatedAt { get; set; }
+
+        public DateTime? LastLogin { get; set; }
 
 
         public virtual ICollection<Customer> Customers { get; set; }

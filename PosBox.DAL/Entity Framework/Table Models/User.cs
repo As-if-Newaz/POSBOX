@@ -43,13 +43,19 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public string Password { get; set; }
 
         [Required]
+        public Language PreferredLanguage { get; set; }
+
+        [Required]
         public Theme PreferredTheme { get; set; }
+
 
         [Required]
         public DateTime CreatedAt { get; set; }
 
         public string? EmailVerificationCode { get; set; }
         public DateTime? EmailVerificationExpiry { get; set; }
+
+        public DateTime? LastLogin { get; set; }
 
         public virtual ICollection<Business> Businesses { get; set; }
 
