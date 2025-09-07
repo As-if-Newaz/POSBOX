@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "PosBox.DAL\\Interfaces\\IRepository.cs",
               "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "PosBox.DAL\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T16:53:12.375Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAA0wBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T09:57:11.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T09:57:11.567Z"
             },
             {
               "$type": "Document",

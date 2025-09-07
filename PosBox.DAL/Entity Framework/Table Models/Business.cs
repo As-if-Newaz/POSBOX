@@ -10,7 +10,7 @@ using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class Business
+    public class Business : BaseEntity
     {
         public int Id { get; set; }
 
@@ -33,9 +33,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string Email { get; set; }
-
-        [Required]
-        public bool IsActive { get; set; } //ISDELETED
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -80,7 +77,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public virtual ICollection<QuickSell> QuickSells { get; set; }
 
-        public virtual ICollection<Report> Reports { get; set; }
+        public virtual ICollection<DailyReport> DailyReports { get; set; }
 
         public virtual ICollection<Transaction> Transactions { get; set; }
 
@@ -92,7 +89,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
             Products = new List<Product>();
             Sells = new List<Sell>();
             QuickSells = new List<QuickSell>();
-            Reports = new List<Report>();
+            DailyReports = new List<DailyReport>();
             Transactions = new List<Transaction>();
         }
     }

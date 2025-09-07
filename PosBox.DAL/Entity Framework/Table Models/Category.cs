@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class Category
+    public class Category : BaseEntity
     {
         public int Id { get; set; }
 

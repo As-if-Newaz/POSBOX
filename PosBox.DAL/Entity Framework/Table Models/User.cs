@@ -9,7 +9,7 @@ using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class User
+    public class User : BaseEntity
     {
         public int Id { get; set; }
 
@@ -32,9 +32,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string Email { get; set; }
-
-        [Required]
-        public bool IsActive { get; set; } //ISDELETED
 
         [Required]
         public UserRole UserRole { get; set; }

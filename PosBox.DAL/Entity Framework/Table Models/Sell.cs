@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class Sell
+    public class Sell : BaseEntity
     {
         public int Id { get; set; }
 
@@ -32,9 +32,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public int UnitPrice { get; set; }
-
-        [Required]
-        public bool IsDeleted { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

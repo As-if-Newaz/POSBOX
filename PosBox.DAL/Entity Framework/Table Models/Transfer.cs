@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class Transfer
+    public class Transfer : BaseEntity
     {
         public int Id { get; set; }
 
@@ -46,9 +46,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public int ToBusinessId { get; set; }
 
-
-        [Required]
-        public bool IsDeleted { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

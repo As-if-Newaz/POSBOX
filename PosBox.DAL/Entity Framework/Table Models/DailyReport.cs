@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class DailyReport
+    public class DailyReport: BaseEntity
     {
         public int Id { get; set; }
 
@@ -30,9 +30,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public int SellNo { get; set; }
-
-        [Required]
-        public bool IsDeleted { get; set; }
 
         [Required]
         public DateTime CreatedAt { get; set; }

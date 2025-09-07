@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class ProductDiscardApplication
+    public class ProductDiscardApplication : BaseEntity
     {
         public int Id { get; set; }
 
@@ -38,8 +38,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(50)]
         public string Status { get; set; }
 
-        [Required]
-        public bool IsDeleted { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

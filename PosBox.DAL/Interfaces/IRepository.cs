@@ -12,6 +12,6 @@ namespace PosBox.DAL.Interfaces
         T? Get(int id);
         bool Create(T entity);
         bool Update(T entity);
-        bool Delete(T entity);
+        bool Delete(int Id);
     }
 }
