@@ -22,7 +22,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(100)]
         public string Address { get; set; }
 
-        public int Due { get; set; }
+        public int? Due { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

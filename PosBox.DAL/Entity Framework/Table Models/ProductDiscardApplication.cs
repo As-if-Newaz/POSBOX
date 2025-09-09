@@ -28,6 +28,9 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public int NetCost { get; set; }
 
+        [Column(TypeName = "VARCHAR"), StringLength(500)]
+        public string? DiscardProductsImageUrl { get; set; }
+
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
@@ -50,7 +53,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
         public DateTime? UpdatedAt { get; set; }
 

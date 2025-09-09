@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Repositories
 {
-    internal class InvoiceRepository : Repository<Invoice>, IInvoice
+    internal class EntryInvoiceRepository : Repository<EntryInvoice>, IEntryInvoice
     {
-        public InvoiceRepository(ApplicationDBContext db) : base(db)
+        public EntryInvoiceRepository(ApplicationDBContext db) : base(db)
         {
         }
     }

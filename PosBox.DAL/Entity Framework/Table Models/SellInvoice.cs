@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class Invoice : BaseEntity
+    public class SellInvoice : BaseEntity
     {
         public int Id { get; set; }
 
@@ -18,9 +18,9 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public int NetAmount { get; set; }
 
-        public int DiscountTk { get; set; }
+        public int? DiscountTk { get; set; }
 
-        public int Due { get; set; }
+        public int? Due { get; set; }
 
         [Required]
         public DateTime InvoiceDateTime { get; set; }

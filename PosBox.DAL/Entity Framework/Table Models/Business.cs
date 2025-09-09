@@ -34,10 +34,13 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(100)]
         public string Email { get; set; }
 
+        [Column(TypeName = "VARCHAR"), StringLength(500)]
+        public string? LogoImageUrl { get; set; }
+
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string BuName { get; set; } //Business Username
+        public string BusinessUserName { get; set; } //Business Username
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -69,7 +72,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public virtual ICollection<Supplier> Suppliers { get; set; }
 
-        public virtual ICollection<Invoice> Invoices { get; set; }
+        public virtual ICollection<SellInvoice> Invoices { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
 
@@ -85,7 +88,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         {
             Customers = new List<Customer>();
             Suppliers = new List<Supplier>();
-            Invoices = new List<Invoice>();
+            Invoices = new List<SellInvoice>();
             Products = new List<Product>();
             Sells = new List<Sell>();
             QuickSells = new List<QuickSell>();

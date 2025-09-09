@@ -29,11 +29,11 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public int Stock { get; set; }
 
         [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Barcode { get; set; }
 
         [Column(TypeName = "VARCHAR"), StringLength(500)]
-        public string? ImageUrl { get; set; }
+        public string? ProductImageUrl { get; set; }
 
         [Required]
         public DateTime AddingDate { get; set; }
@@ -43,7 +43,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
-        public string Comment { get; set; }
+        public string? Comment { get; set; }
 
 
         [Required]
@@ -68,5 +68,10 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [ForeignKey("Supplier")]
         [Required]
         public int SupplierId { get; set; }
+
+        public virtual EntryInvoice EntryInvoice { get; set; }
+        [ForeignKey("EntryInvoice")]
+        [Required]
+        public int EntryInvoiceId { get; set; }
     }
 }

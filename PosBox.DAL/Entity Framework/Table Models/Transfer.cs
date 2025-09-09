@@ -58,7 +58,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
         public DateTime? UpdatedAt { get; set; }
 

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Interfaces
 {
-    public interface IInvoice : IRepository<Invoice>
+    public interface IEntryInvoice : IRepository<EntryInvoice>
     {
-
     }
 }

@@ -12,7 +12,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
     {
         public int Id { get; set; }
 
-        public virtual Invoice Invoice { get; set; }
+        public virtual SellInvoice Invoice { get; set; }
         [ForeignKey("Invoice")]
         [Required]
         public int InvoiceId { get; set; }
