@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
@@ -30,7 +31,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string Status { get; set; }
+        public PaymentStatus Status { get; set; }
 
         public virtual Supplier Supplier { get; set; }
         [ForeignKey("Supplier")]

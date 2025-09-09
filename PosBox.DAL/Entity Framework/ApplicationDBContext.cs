@@ -16,11 +16,12 @@ namespace PosBox.DAL.Entity_Framework
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<DailyReport> DailyReports { get; set; }
-        public DbSet<SellInvoice> Invoices { get; set; }
+        public DbSet<EntryInvoice> EntryInvoices { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductDiscardApplication> ProductDiscardApplications { get; set; }
         public DbSet<QuickSell> QuickSells { get; set; }
         public DbSet<Sell> Sells { get; set; }
+        public DbSet<SellInvoice> SellInvoices { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Transfer> Transfers { get; set; }

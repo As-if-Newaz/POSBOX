@@ -23,5 +23,11 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
             Light,
             Dark
         }
+        public enum PaymentStatus
+        {
+            Paid,
+            Partial,
+            Unpaid
+        }
     }
 }
