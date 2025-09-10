@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
-namespace PosBox.DAL.Entity_Framework.Table_Models
+namespace PosBox.BLL.DTOs
 {
-    public class AuditLog : BaseEntity
+    public class AuditLogDTO : BaseEntityDTO
     {
         public int Id { get; set; }
 
