@@ -9,32 +9,36 @@ using System.Threading.Tasks;
 
 namespace PosBox.BLL.DTOs
 {
-    public class SupplierDTO : BaseEntityDTO
+    public class StockDTO : BaseEntityDTO
     {
         public int Id { get; set; }
 
+        public virtual ProductDTO Product { get; set; }
+        [ForeignKey("Product")]
+        [Required]
+        public int ProductId { get; set; }
+
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
-        public string Name { get; set; }
+        public string ProductName { get; set; }
 
         [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
-        public string Address { get; set; }
-
-        public int? PaymentDue { get; set; }
-
-
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
-        public string? Remarks { get; set; }
+        public int Cost { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string Phone { get; set; }
+        public string CostCode { get; set; }
 
+        [Required]
+        public int Quantity { get; set; }
+
+        [Required]
+        public DateTime AddingDate { get; set; }
+
+        [Required]
+        public DateTime ExpireDate { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -43,14 +47,19 @@ namespace PosBox.BLL.DTOs
 
         [Required]
         public DateTime CreatedAt { get; set; }
-
         public virtual BusinessDTO Business { get; set; }
         [ForeignKey("Business")]
         [Required]
         public int BusinessId { get; set; }
 
-        public virtual ICollection<EntryInvoiceDTO> EntryInvoices { get; set; }
+        public virtual SupplierDTO Supplier { get; set; }
+        [ForeignKey("Supplier")]
+        [Required]
+        public int SupplierId { get; set; }
 
-        public virtual ICollection<StockDTO> Stocks { get; set; }
+        public virtual EntryInvoiceDTO EntryInvoice { get; set; }
+        [ForeignKey("EntryInvoice")]
+        [Required]
+        public int EntryInvoiceId { get; set; }
     }
 }

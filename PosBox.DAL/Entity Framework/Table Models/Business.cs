@@ -80,10 +80,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public virtual ICollection<EntryInvoice> EntryInvoices { get; set; }
 
-        public virtual ICollection<QuickSell> QuickSells { get; set; }
-
-        public virtual ICollection<Sell> Sells { get; set; }
-
         public virtual ICollection<SellInvoice> SellInvoices { get; set; }
 
         public virtual ICollection<Stock> Stocks { get; set; }
@@ -99,8 +95,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
             Customers = new List<Customer>();
             DailyReports = new List<DailyReport>();
             EntryInvoices = new List<EntryInvoice>();     
-            QuickSells = new List<QuickSell>();
-            Sells = new List<Sell>();
             SellInvoices = new List<SellInvoice>();
             Stocks = new List<Stock>();
             StockDiscardApplications = new List<StockDiscardApplication>();

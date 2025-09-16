@@ -43,6 +43,6 @@ namespace PosBox.BLL.DTOs
         [Required]
         public int BusinessId { get; set; }
 
-        public virtual ICollection<ProductDTO> Products { get; set; }
+        public virtual ICollection<StockDTO> Stocks { get; set; }
     }
 }

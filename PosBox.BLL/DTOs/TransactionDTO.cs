@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.BLL.DTOs
 {
@@ -16,7 +17,7 @@ namespace PosBox.BLL.DTOs
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string Type { get; set; }
+        public TransactionType Type { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -29,6 +30,8 @@ namespace PosBox.BLL.DTOs
         [Required]
         public int Amount { get; set; }
 
+        [Required]
+        public ApprovalStatus ApprovalStatus { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

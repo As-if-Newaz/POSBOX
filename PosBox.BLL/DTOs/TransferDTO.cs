@@ -13,40 +13,13 @@ namespace PosBox.BLL.DTOs
     {
         public int Id { get; set; }
 
-        public virtual ProductDTO Product { get; set; }
-        [ForeignKey("Product")]
+        public virtual StockDTO Stock { get; set; }
+        [ForeignKey("Stock")]
         [Required]
-        public int ProductId { get; set; }
+        public int StockId { get; set; }
 
         [Required]
         public int Quantity { get; set; }
-
-        [Required]
-        public DateTime TransferTime { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
-        public string Comment { get; set; }
-
-        [Required]
-        public int TransferCost { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string Status { get; set; }
-
-        public virtual BusinessDTO FromBusiness { get; set; }
-        [ForeignKey("FromBusiness")]
-        [Required]
-        public int FromBusinessId { get; set; }
-
-        public virtual BusinessDTO ToBusiness { get; set; }
-        [ForeignKey("ToBusiness")]
-        [Required]
-        public int ToBusinessId { get; set; }
-
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -56,11 +29,9 @@ namespace PosBox.BLL.DTOs
         [Required]
         public DateTime CreatedAt { get; set; }
 
-
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string? UpdatedBy { get; set; }
-
-        public DateTime? UpdatedAt { get; set; }
+        public virtual TransferInvoiceDTO TransferInvoice { get; set; }
+        [ForeignKey("TransferInvoice")]
+        [Required]
+        public int TransferInvoiceId { get; set; }
     }
 }

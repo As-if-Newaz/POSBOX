@@ -3,60 +3,84 @@
   "WorkspaceRootPath": "D:\\Projects\\PosBox\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\auditlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\auditlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transferinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transferinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\stockdiscardapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\stockdiscardapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\sellinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\sellinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\quicksell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\quicksell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\entryinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\entryinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transferinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transferinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,10 +183,6 @@
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\businessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\auditlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\auditlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\transferdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\transferdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -171,16 +191,8 @@
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\sellinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -197,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\productdiscardapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\productdiscardapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\stockdiscardapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\stockdiscardapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -221,14 +229,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|d:\\projects\\posbox\\posbox.bll\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6EB9009-63C5-412F-9B55-E1AA8F3746C1}|PosBox.BLL\\PosBox.BLL.csproj|solutionrelative:posbox.bll\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\entryinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\entryinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\entity framework\\table models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|solutionrelative:posbox.dal\\entity framework\\table models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{564E75E1-C7DF-453F-A6D8-949976FB63CC}|PosBox.DAL\\PosBox.DAL.csproj|d:\\projects\\posbox\\posbox.dal\\repositories\\entryinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -334,17 +334,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "SellInvoice.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwEEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T16:47:10.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwC8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T18:29:24.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuickSell.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA9wCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T07:52:42.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Sell.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T09:57:11.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Stock.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Stock.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Stock.cs",
               "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Stock.cs",
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Stock.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA6wBEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwDwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T08:38:05.565Z",
               "EditorCaption": ""
@@ -352,64 +404,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TransferInvoice.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA9wBgAAAAAAAAAAAAAAA==",
+              "Title": "StockDiscardApplication.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwDUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:31:13.897Z",
+              "WhenOpened": "2025-09-07T07:32:18.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Sell.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Sell.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA0wC4AAAAAAAAAAAAAAA==",
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T09:57:11.567Z",
+              "WhenOpened": "2025-09-07T16:48:05.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SellInvoice.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\SellInvoice.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAwAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:47:10.877Z",
+              "WhenOpened": "2025-09-07T18:43:01.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Transfer.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA9wEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:43:08.758Z",
+              "WhenOpened": "2025-09-04T16:32:00.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "Business.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T14:29:27.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\User.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\User.cs",
               "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\User.cs",
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\User.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwCcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-04T16:21:55.103Z",
               "EditorCaption": ""
@@ -422,7 +487,7 @@
               "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\AuditLog.cs",
               "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\AuditLog.cs",
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\AuditLog.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T18:27:18.142Z",
               "EditorCaption": ""
@@ -430,71 +495,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Business.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Business.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAUwFcAAABEAAAAAAAAAA==",
+              "Title": "AuditLogDTO.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\AuditLogDTO.cs",
+              "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\AuditLogDTO.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\AuditLogDTO.cs",
+              "RelativeToolTip": "PosBox.BLL\\DTOs\\AuditLogDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T14:29:27.361Z",
+              "WhenOpened": "2025-09-09T19:00:08.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Enums.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T16:32:00.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:27:06.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DailyReport.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:31:35.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Product.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Product.cs",
               "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Product.cs",
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Product.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwBsAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T18:42:19.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
+              "Title": "EntryInvoice.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T17:50:43.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DailyReport.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\DailyReport.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T18:31:35.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Category.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Category.cs",
@@ -507,20 +559,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "QuickSell.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\QuickSell.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAArAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T07:52:42.984Z",
+              "WhenOpened": "2025-09-07T18:27:06.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
+              "Title": "Transfer.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Transfer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T18:43:08.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TransferInvoice.cs",
+              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
+              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
+              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
+              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\TransferInvoice.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwB0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T21:31:13.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\UserService.cs",
@@ -528,12 +606,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\UserService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T20:30:51.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T20:30:51.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "TransferService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\TransferService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\TransferService.cs",
@@ -541,12 +618,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\TransferService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwDgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:22:31.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:22:31.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\TransactionService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\TransactionService.cs",
@@ -554,12 +630,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\TransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:21:57.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:21:57.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "SupplierService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\SupplierService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\SupplierService.cs",
@@ -567,12 +642,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\SupplierService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:21:26.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:21:26.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "SellService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\SellService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\SellService.cs",
@@ -580,12 +654,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\SellService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:19:13.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:19:13.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "SellInvoiceService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\SellInvoiceService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\SellInvoiceService.cs",
@@ -593,12 +666,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\SellInvoiceService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:19:50.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:19:50.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "QuickSellService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\QuickSellService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\QuickSellService.cs",
@@ -606,12 +678,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\QuickSellService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAgwDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:18:24.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:18:24.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\ProductService.cs",
@@ -619,12 +690,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\ProductService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAqwB8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:17:52.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:17:52.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ProductDiscardApplicationService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\ProductDiscardApplicationService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\ProductDiscardApplicationService.cs",
@@ -632,12 +702,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\ProductDiscardApplicationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:17:11.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:17:11.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "EntryInvoiceService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\EntryInvoiceService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\EntryInvoiceService.cs",
@@ -645,12 +714,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\EntryInvoiceService.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:16:23.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:16:23.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "DailyReportService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\DailyReportService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\DailyReportService.cs",
@@ -658,12 +726,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\DailyReportService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:15:01.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:15:01.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\CustomerService.cs",
@@ -671,12 +738,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\CustomerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:12:28.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:12:28.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\CategoryService.cs",
@@ -684,12 +750,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\CategoryService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:11:22.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T21:11:22.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "BusinessService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\BusinessService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\BusinessService.cs",
@@ -697,12 +762,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\BusinessService.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T20:46:38.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T20:46:38.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "AuditLogService.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\Services\\AuditLogService.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\Services\\AuditLogService.cs",
@@ -710,12 +774,11 @@
               "RelativeToolTip": "PosBox.BLL\\Services\\AuditLogService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T20:27:25.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T20:27:25.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "UserPreferencesDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\UserPreferencesDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\UserPreferencesDTO.cs",
@@ -727,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "PosBox.BLL.csproj",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\PosBox.BLL.csproj",
               "RelativeDocumentMoniker": "PosBox.BLL\\PosBox.BLL.csproj",
@@ -739,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "CustomMapper.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\CustomMapper.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\CustomMapper.cs",
@@ -751,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "BusinessDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\BusinessDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\BusinessDTO.cs",
@@ -763,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\UserDTO.cs",
@@ -775,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Repositories\\UserRepository.cs",
@@ -787,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "IUser.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Interfaces\\IUser.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Interfaces\\IUser.cs",
@@ -799,19 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AuditLogDTO.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\AuditLogDTO.cs",
-              "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\AuditLogDTO.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\AuditLogDTO.cs",
-              "RelativeToolTip": "PosBox.BLL\\DTOs\\AuditLogDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T19:00:08.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "AuditLogRepository.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Repositories\\AuditLogRepository.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Repositories\\AuditLogRepository.cs",
@@ -823,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "EntryInvoiceDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\EntryInvoiceDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\EntryInvoiceDTO.cs",
@@ -835,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "IAuditLog.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Interfaces\\IAuditLog.cs",
               "RelativeDocumentMoniker": "PosBox.DAL\\Interfaces\\IAuditLog.cs",
@@ -847,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "ProductDiscardApplicationDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\ProductDiscardApplicationDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\ProductDiscardApplicationDTO.cs",
@@ -859,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "QuickSellDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\QuickSellDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\QuickSellDTO.cs",
@@ -871,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "SellDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\SellDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\SellDTO.cs",
@@ -883,7 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "SellInvoiceDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\SellInvoiceDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\SellInvoiceDTO.cs",
@@ -895,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "SupplierDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\SupplierDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\SupplierDTO.cs",
@@ -907,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "TransactionDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\TransactionDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\TransactionDTO.cs",
@@ -919,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "TransferDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\TransferDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\TransferDTO.cs",
@@ -931,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\ProductDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\ProductDTO.cs",
@@ -943,19 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Transaction.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwDIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:43:01.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "DailyReportDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\DailyReportDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\DailyReportDTO.cs",
@@ -967,19 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Supplier.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA5wDAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:48:05.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\CustomerDTO.cs",
@@ -991,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "BaseEntityDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\BaseEntityDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\BaseEntityDTO.cs",
@@ -1003,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.BLL\\DTOs\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "PosBox.BLL\\DTOs\\CategoryDTO.cs",
@@ -1012,19 +1039,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T22:28:11.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "StockDiscardApplication.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\StockDiscardApplication.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwD4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T07:32:18.534Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1040,18 +1054,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "EntryInvoice.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\EntryInvoice.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAwwC0AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:50:43.551Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 59,
               "Title": "ApplicationDBContext.cs",
               "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\ApplicationDBContext.cs",
@@ -1060,20 +1062,7 @@
               "RelativeToolTip": "PosBox.DAL\\Entity Framework\\ApplicationDBContext.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAEBVwBEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T17:47:55.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
-              "RelativeDocumentMoniker": "PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
-              "ToolTip": "D:\\Projects\\PosBox\\PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
-              "RelativeToolTip": "PosBox.DAL\\Entity Framework\\Table Models\\Customer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowC8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:29:24.294Z"
+              "WhenOpened": "2025-09-07T17:47:55.781Z"
             },
             {
               "$type": "Document",
@@ -1085,7 +1074,8 @@
               "RelativeToolTip": "PosBox.DAL\\DataAccess.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAuwDYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T18:16:35.429Z"
+              "WhenOpened": "2025-09-09T18:16:35.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1097,8 +1087,7 @@
               "RelativeToolTip": "PosBox.DAL\\Interfaces\\IApplicationDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwBoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T17:49:22.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T17:49:22.654Z"
             },
             {
               "$type": "Document",

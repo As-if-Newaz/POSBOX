@@ -18,34 +18,22 @@ namespace PosBox.BLL.DTOs
         [StringLength(100)]
         public string Name { get; set; }
 
-        [Required]
-        public int Cost { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string CostCode { get; set; }
-
-        [Required]
-        public int Stock { get; set; }
-
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string Barcode { get; set; }
 
+        [Required]
+        public int WeightGramML { get; set; }
+
+        [Column(TypeName = "VARCHAR"), StringLength(500)]
+        public string? ProductDetails { get; set; }
+
         [Column(TypeName = "VARCHAR"), StringLength(500)]
         public string? ProductImageUrl { get; set; }
-
-        [Required]
-        public DateTime AddingDate { get; set; }
-
-        [Required]
-        public DateTime ExpireDate { get; set; }
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string? Comment { get; set; }
-
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -59,20 +47,5 @@ namespace PosBox.BLL.DTOs
         [ForeignKey("Category")]
         [Required]
         public int CategoryId { get; set; }
-
-        public virtual BusinessDTO Business { get; set; }
-        [ForeignKey("Business")]
-        [Required]
-        public int BusinessId { get; set; }
-
-        public virtual SupplierDTO Supplier { get; set; }
-        [ForeignKey("Supplier")]
-        [Required]
-        public int SupplierId { get; set; }
-
-        public virtual EntryInvoiceDTO EntryInvoice { get; set; }
-        [ForeignKey("EntryInvoice")]
-        [Required]
-        public int EntryInvoiceId { get; set; }
     }
 }

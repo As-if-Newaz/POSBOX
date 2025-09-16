@@ -29,7 +29,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
 
         [Required]
-        public int NoOfSells { get; set; }
+        public int NumberOfSells { get; set; }
 
         [Required]
         public DateTime CreatedAt { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PosBox.DAL.Entity_Framework.Table_Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
-namespace PosBox.DAL.Entity_Framework.Table_Models
+namespace PosBox.BLL.DTOs
 {
-    public class TransferInvoice : BaseEntity
+     public class TransferInvoiceDTO : BaseEntityDTO
     {
         public int Id { get; set; }
 
@@ -29,12 +30,12 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(50)]
         public ApprovalStatus ApprovalStatus { get; set; }
 
-        public virtual Business FromBusiness { get; set; }
+        public virtual BusinessDTO FromBusiness { get; set; }
         [ForeignKey("FromBusiness")]
         [Required]
         public int FromBusinessId { get; set; }
 
-        public virtual Business ToBusiness { get; set; }
+        public virtual BusinessDTO ToBusiness { get; set; }
         [ForeignKey("ToBusiness")]
         [Required]
         public int ToBusinessId { get; set; }
@@ -54,12 +55,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public DateTime? UpdatedAt { get; set; }
 
-        public virtual ICollection<Transfer> Transfers { get; set; }
-
-        public TransferInvoice()
-        {
-            Transfers = new List<Transfer>();
-        }
-
+        public virtual ICollection<TransferDTO> Transfers { get; set; }
     }
 }

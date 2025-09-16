@@ -23,30 +23,30 @@ namespace PosBox.BLL.Services
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<StockDiscardApplication, ProductDiscardApplicationDTO>().ReverseMap();
+                cfg.CreateMap<StockDiscardApplication, StockDiscardApplicationDTO>().ReverseMap();
 
             });
             return new Mapper(config);
         }
 
-        public bool create(ProductDiscardApplicationDTO obj)
+        public bool create(StockDiscardApplicationDTO obj)
         {
             var record = GetMapper().Map<StockDiscardApplication>(obj);
             return DA.ProductDiscardApplicationData().Create(record);
         }
 
-        public IEnumerable<ProductDiscardApplicationDTO> GetAll()
+        public IEnumerable<StockDiscardApplicationDTO> GetAll()
         {
             var data = DA.ProductDiscardApplicationData().GetAll();
-            return GetMapper().Map<List<ProductDiscardApplicationDTO>>(data);
+            return GetMapper().Map<List<StockDiscardApplicationDTO>>(data);
 
         }
 
-        public ProductDiscardApplicationDTO? GetById(int Id)
+        public StockDiscardApplicationDTO? GetById(int Id)
         {
             var data = DA.ProductDiscardApplicationData().Get(Id);
             if (data == null) return null;
-            return GetMapper().Map<ProductDiscardApplicationDTO>(data);
+            return GetMapper().Map<StockDiscardApplicationDTO>(data);
         }
 
         public bool Delete(int Id)
@@ -57,7 +57,7 @@ namespace PosBox.BLL.Services
             return true;
         }
 
-        public bool Update(ProductDiscardApplicationDTO obj)
+        public bool Update(StockDiscardApplicationDTO obj)
         {
             var data = GetMapper().Map<StockDiscardApplication>(obj);
             if (data == null)

@@ -30,7 +30,7 @@ namespace PosBox.BLL.DTOs
 
 
         [Required]
-        public int SellNo { get; set; }
+        public int NumberOfSells { get; set; }
 
         [Required]
         public DateTime CreatedAt { get; set; }

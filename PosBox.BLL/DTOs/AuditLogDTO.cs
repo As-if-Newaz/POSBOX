@@ -24,6 +24,9 @@ namespace PosBox.BLL.DTOs
         public DateTime PerformedAt { get; set; }
 
         [Required]
+        public Role PerformedByRole { get; set; }
+
+        [Required]
         public int PerformedById { get; set; }
     }
 }

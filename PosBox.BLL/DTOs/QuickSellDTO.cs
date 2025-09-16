@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.BLL.DTOs
 {
@@ -13,20 +14,10 @@ namespace PosBox.BLL.DTOs
     {
         public int Id { get; set; }
 
-        public virtual SellInvoiceDTO Invoice { get; set; }
-        [ForeignKey("Invoice")]
-        [Required]
-        public int InvoiceId { get; set; }
-
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string ProductName { get; set; }
-
-        public virtual CustomerDTO Customer { get; set; }
-        [ForeignKey("Customer")]
-        [Required]
-        public int CustomerId { get; set; }
 
         [Required]
         public int Quantity { get; set; }
@@ -34,6 +25,8 @@ namespace PosBox.BLL.DTOs
         [Required]
         public int UnitPrice { get; set; }
 
+        [Required]
+        public SellStatus SellStatus { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -43,9 +36,9 @@ namespace PosBox.BLL.DTOs
         [Required]
         public DateTime CreatedAt { get; set; }
 
-        public virtual BusinessDTO Business { get; set; }
-        [ForeignKey("Business")]
+        public virtual SellInvoiceDTO SellInvoice { get; set; }
+        [ForeignKey("SellInvoice")]
         [Required]
-        public int BusinessId { get; set; }
+        public int SellInvoiceId { get; set; }
     }
 }

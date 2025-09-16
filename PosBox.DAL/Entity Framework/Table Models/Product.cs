@@ -30,9 +30,6 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Column(TypeName = "VARCHAR"), StringLength(500)]
         public string? ProductImageUrl { get; set; }
 
-        [Required]
-        public DateTime AddingDate { get; set; }
-
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string? Comment { get; set; }

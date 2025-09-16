@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PosBox.DAL.Entity_Framework.Table_Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -47,6 +48,11 @@ namespace PosBox.BLL.DTOs
         public string Password { get; set; }
 
         [Required]
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(50)]
+        public string CostCodeString { get; set; }
+
+        [Required]
         public Language PreferredLanguage { get; set; }
 
         [Required]
@@ -66,20 +72,22 @@ namespace PosBox.BLL.DTOs
 
         public DateTime? LastLogin { get; set; }
 
+
         public virtual ICollection<CustomerDTO> Customers { get; set; }
-
-        public virtual ICollection<SupplierDTO> Suppliers { get; set; }
-
-        public virtual ICollection<SellInvoiceDTO> Invoices { get; set; }
-
-        public virtual ICollection<ProductDTO> Products { get; set; }
-
-        public virtual ICollection<SellDTO> Sells { get; set; }
-
-        public virtual ICollection<QuickSellDTO> QuickSells { get; set; }
 
         public virtual ICollection<DailyReportDTO> DailyReports { get; set; }
 
+        public virtual ICollection<EntryInvoiceDTO> EntryInvoices { get; set; }
+
+        public virtual ICollection<SellInvoiceDTO> SellInvoices { get; set; }
+
+        public virtual ICollection<StockDTO> Stocks { get; set; }
+
+        public virtual ICollection<StockDiscardApplicationDTO> StockDiscardApplications { get; set; }
+
+        public virtual ICollection<SupplierDTO> Suppliers { get; set; }
+
         public virtual ICollection<TransactionDTO> Transactions { get; set; }
+
     }
 }

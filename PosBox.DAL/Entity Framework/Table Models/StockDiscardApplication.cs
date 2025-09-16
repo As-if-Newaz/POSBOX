@@ -35,7 +35,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public Status Status { get; set; }
+        public ApprovalStatus Status { get; set; }
 
 
         [Required]

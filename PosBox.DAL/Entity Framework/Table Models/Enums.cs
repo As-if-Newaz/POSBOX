@@ -50,7 +50,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
             Deleted,
             Updated,
         }
-        public enum Status
+        public enum ApprovalStatus
         {
             Pending,
             Approved,

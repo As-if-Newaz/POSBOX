@@ -6,22 +6,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.BLL.DTOs
 {
-    public class ProductDiscardApplicationDTO : BaseEntityDTO
+    public class StockDiscardApplicationDTO : BaseEntityDTO
     {
         public int Id { get; set; }
 
-        public virtual ProductDTO Product { get; set; }
-        [ForeignKey("Product")]
+        public virtual StockDTO Stock { get; set; }
+        [ForeignKey("Stock")]
         [Required]
-        public int ProductId { get; set; }
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string CostCode { get; set; }
+        public int StockId { get; set; }
 
         [Required]
         public int Quantity { get; set; }
@@ -40,7 +36,7 @@ namespace PosBox.BLL.DTOs
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string Status { get; set; }
+        public ApprovalStatus ApprovalStatus { get; set; }
 
 
         [Required]
