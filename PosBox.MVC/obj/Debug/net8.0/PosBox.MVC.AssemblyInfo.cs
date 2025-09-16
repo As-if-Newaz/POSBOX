@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosBox.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef16619f550d24f501a9a7a75b9d0318df915a21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09a0440cbf548ea92576ce937059622b94a8b71e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosBox.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosBox.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

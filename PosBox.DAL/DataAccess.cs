@@ -47,11 +47,6 @@ namespace PosBox.DAL
             return new ProductRepository(db);
         }
 
-        public IStockDiscardApplication ProductDiscardApplicationData()
-        {
-            return new ProductDiscardApplicationRepository(db);
-        }
-
         public IQuickSell QuickSellData()
         {
             return new QuickSellRepository(db);
@@ -64,6 +59,16 @@ namespace PosBox.DAL
         public ISellInvoice SellInvoiceData()
         {
             return new SellInvoiceRepository(db);
+        }
+
+        public IStock StockData()
+        {
+            return new StockRepository(db);
+        }
+
+        public IStockDiscardApplication StockDiscardApplicationData()
+        {
+            return new StockDiscardApplicationRepository(db);
         }
 
         public ISupplier SupplierData()
@@ -79,6 +84,11 @@ namespace PosBox.DAL
         public ITransfer TransferData()
         {
             return new TransferRepository(db);
+        }
+
+        public ITransferInvoice TransferInvoiceData()
+        {
+            return new TransferInvoiceRepository(db);
         }
 
         public IUser UserData()

@@ -18,13 +18,15 @@ namespace PosBox.DAL.Entity_Framework
         public DbSet<DailyReport> DailyReports { get; set; }
         public DbSet<EntryInvoice> EntryInvoices { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<StockDiscardApplication> ProductDiscardApplications { get; set; }
         public DbSet<QuickSell> QuickSells { get; set; }
         public DbSet<Sell> Sells { get; set; }
         public DbSet<SellInvoice> SellInvoices { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
+        public DbSet<StockDiscardApplication> StockDiscardApplications { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Transfer> Transfers { get; set; }
+        public DbSet<TransferInvoice> TransferInvoices { get; set; }
         public DbSet<User> Users { get; set; }
 
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)

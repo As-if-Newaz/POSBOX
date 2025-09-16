@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace PosBox.BLL.Services
 {
-    public class ProductDiscardApplicationService
+    public class StockDiscardApplicationService
     {
         private readonly DataAccess DA;
 
-        public ProductDiscardApplicationService(DataAccess dataAccess)
+        public StockDiscardApplicationService(DataAccess dataAccess)
         {
             DA = dataAccess;
         }
@@ -32,28 +32,28 @@ namespace PosBox.BLL.Services
         public bool create(StockDiscardApplicationDTO obj)
         {
             var record = GetMapper().Map<StockDiscardApplication>(obj);
-            return DA.ProductDiscardApplicationData().Create(record);
+            return DA.StockDiscardApplicationData().Create(record);
         }
 
         public IEnumerable<StockDiscardApplicationDTO> GetAll()
         {
-            var data = DA.ProductDiscardApplicationData().GetAll();
+            var data = DA.StockDiscardApplicationData().GetAll();
             return GetMapper().Map<List<StockDiscardApplicationDTO>>(data);
 
         }
 
         public StockDiscardApplicationDTO? GetById(int Id)
         {
-            var data = DA.ProductDiscardApplicationData().Get(Id);
+            var data = DA.StockDiscardApplicationData().Get(Id);
             if (data == null) return null;
             return GetMapper().Map<StockDiscardApplicationDTO>(data);
         }
 
         public bool Delete(int Id)
         {
-            var ext = DA.ProductDiscardApplicationData().Get(Id);
+            var ext = DA.StockDiscardApplicationData().Get(Id);
             if (ext == null) return false;
-            DA.ProductDiscardApplicationData().Delete(ext.Id);
+            DA.StockDiscardApplicationData().Delete(ext.Id);
             return true;
         }
 
@@ -64,7 +64,7 @@ namespace PosBox.BLL.Services
             {
                 return false;
             }
-            return DA.ProductDiscardApplicationData().Update(data);
+            return DA.StockDiscardApplicationData().Update(data);
         }
     }
 }

@@ -17,13 +17,15 @@ namespace PosBox.DAL.Interfaces
         DbSet<DailyReport> DailyReports { get; set; }
         DbSet<EntryInvoice> EntryInvoices { get; set; }   
         DbSet<Product> Products { get; set; }
-        DbSet<StockDiscardApplication> ProductDiscardApplications { get; set; }
         DbSet<QuickSell> QuickSells { get; set; }
         DbSet<Sell> Sells { get; set; }
         DbSet<SellInvoice> SellInvoices { get; set; }
+        DbSet<Stock> Stocks { get; set; }
+        DbSet<StockDiscardApplication> StockDiscardApplications { get; set; }
         DbSet<Supplier> Suppliers { get; set; }
         DbSet<Transaction> Transactions { get; set; }   
         DbSet<Transfer> Transfers { get; set; }
+        DbSet<TransferInvoice> TransferInvoices { get; set; }
         DbSet<User> Users { get; set; }
 
     }
