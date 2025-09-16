@@ -17,7 +17,7 @@ namespace PosBox.DAL.Interfaces
         DbSet<DailyReport> DailyReports { get; set; }
         DbSet<EntryInvoice> EntryInvoices { get; set; }   
         DbSet<Product> Products { get; set; }
-        DbSet<ProductDiscardApplication> ProductDiscardApplications { get; set; }
+        DbSet<StockDiscardApplication> ProductDiscardApplications { get; set; }
         DbSet<QuickSell> QuickSells { get; set; }
         DbSet<Sell> Sells { get; set; }
         DbSet<SellInvoice> SellInvoices { get; set; }

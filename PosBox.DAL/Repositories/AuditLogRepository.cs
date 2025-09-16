@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Repositories
 {
@@ -19,7 +20,7 @@ namespace PosBox.DAL.Repositories
             return db.AuditLogs.Where(u => u.PerformedById == Id);
         }
 
-        public bool RecordLog(int Id, string Action, string? Details)
+        public bool RecordLog(int Id, AuditActions Action, string? Details)
         {
             var auditLog = new AuditLog
             {

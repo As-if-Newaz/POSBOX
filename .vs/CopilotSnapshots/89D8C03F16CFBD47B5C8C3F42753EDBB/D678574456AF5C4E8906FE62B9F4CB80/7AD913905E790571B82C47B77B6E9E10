@@ -1,0 +1,34 @@
+﻿using PosBox.BLL.DTOs;
+using PosBox.DAL.Entity_Framework.Table_Models;
+
+namespace PosBox.BLL
+{
+    public class CustomMapper
+    {
+        // Custom mapping 1 config
+        public static AuditLog Convert(AuditLogDTO a)
+        {
+            return new AuditLog
+            {
+                Id = a.Id,
+                Action = a.Action,
+                Details = a.Details,
+                PerformedAt = a.PerformedAt,
+                PerformedById = a.PerformedById
+            };
+        }
+
+        public static AuditLogDTO Convert(AuditLog a)
+        {
+            return new AuditLogDTO
+            {
+                Id = a.Id,
+                Action = a.Action,
+                Details = a.Details,
+                PerformedAt = a.PerformedAt,
+                PerformedById = a.PerformedById
+            };
+        }
+
+    }
+}

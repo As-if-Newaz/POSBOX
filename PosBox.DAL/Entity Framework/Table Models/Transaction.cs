@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Azure.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
@@ -15,7 +17,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
-        public string Type { get; set; }
+        public TransactionType Type { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -28,6 +30,8 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public int Amount { get; set; }
 
+        [Required]
+        public Status Status { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

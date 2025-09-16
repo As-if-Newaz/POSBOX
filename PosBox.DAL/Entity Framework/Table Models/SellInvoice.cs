@@ -30,10 +30,10 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [StringLength(50)]
         public string PaymentMethod { get; set; }
 
-        [Required]
+
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
-        public string Comment { get; set; }
+        public string? Comment { get; set; }
 
         [Required]
         public int Cost { get; set; }
@@ -47,6 +47,12 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public string Status { get; set; }
 
         [Required]
+        public bool HasQuickSell { get; set; }
+
+        [Column(TypeName = "VARCHAR"), StringLength(500)]
+        public string? QuickSellInvoiceImageUrl { get; set; }
+
+        [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
         public string CreatedBy { get; set; }
@@ -54,9 +60,17 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public DateTime CreatedAt { get; set; }
 
+        public virtual Customer Customer { get; set; }
+        [ForeignKey("Customer")]
+        [Required]
+        public int CustomerId { get; set; }
+
         public virtual Business Business { get; set; }
         [ForeignKey("Business")]
         [Required]
         public int BusinessId { get; set; }
+
+        public virtual ICollection<Sell> Sells { get; set; }
+        public virtual ICollection<QuickSell> QuickSells { get; set; }
     }
 }

@@ -38,6 +38,9 @@ namespace PosBox.BLL.DTOs
         public UserRole UserRole { get; set; }
 
         [Required]
+        public UserStatus UserStatus { get; set; }
+
+        [Required]
         public string Password { get; set; }
 
         [Required]

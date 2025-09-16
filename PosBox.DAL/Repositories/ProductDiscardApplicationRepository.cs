@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Repositories
 {
-    internal class ProductDiscardApplicationRepository : Repository<ProductDiscardApplication>, IProductDiscardApplication
+    internal class ProductDiscardApplicationRepository : Repository<StockDiscardApplication>, IStockDiscardApplication
     {
         public ProductDiscardApplicationRepository(ApplicationDBContext db) : base(db)
         {

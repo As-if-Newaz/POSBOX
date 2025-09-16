@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
-    public class ProductDiscardApplication : BaseEntity
+    public class Stock : BaseEntity
     {
         public int Id { get; set; }
 
@@ -19,6 +19,14 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         [Column(TypeName = "VARCHAR")]
+        [StringLength(100)]
+        public string ProductName { get; set; }
+
+        [Required]
+        public int Cost { get; set; }
+
+        [Required]
+        [Column(TypeName = "VARCHAR")]
         [StringLength(50)]
         public string CostCode { get; set; }
 
@@ -26,21 +34,10 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public int Quantity { get; set; }
 
         [Required]
-        public int NetCost { get; set; }
-
-        [Column(TypeName = "VARCHAR"), StringLength(500)]
-        public string? DiscardProductsImageUrl { get; set; }
+        public DateTime AddingDate { get; set; }
 
         [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string Type { get; set; } // return or dump
-
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string Status { get; set; }
-
+        public DateTime ExpireDate { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -49,17 +46,20 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public DateTime CreatedAt { get; set; }
-
-
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(50)]
-        public string? UpdatedBy { get; set; }
-
-        public DateTime? UpdatedAt { get; set; }
-
         public virtual Business Business { get; set; }
         [ForeignKey("Business")]
         [Required]
         public int BusinessId { get; set; }
+
+        public virtual Supplier Supplier { get; set; }
+        [ForeignKey("Supplier")]
+        [Required]
+        public int SupplierId { get; set; }
+
+        public virtual EntryInvoice EntryInvoice { get; set; }
+        [ForeignKey("EntryInvoice")]
+        [Required]
+        public int EntryInvoiceId { get; set; }
+
     }
 }

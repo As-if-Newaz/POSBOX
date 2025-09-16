@@ -18,7 +18,7 @@ namespace PosBox.DAL.Entity_Framework
         public DbSet<DailyReport> DailyReports { get; set; }
         public DbSet<EntryInvoice> EntryInvoices { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductDiscardApplication> ProductDiscardApplications { get; set; }
+        public DbSet<StockDiscardApplication> ProductDiscardApplications { get; set; }
         public DbSet<QuickSell> QuickSells { get; set; }
         public DbSet<Sell> Sells { get; set; }
         public DbSet<SellInvoice> SellInvoices { get; set; }

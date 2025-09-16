@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PosBox.DAL.Interfaces
 {
-    public interface IProductDiscardApplication : IRepository<ProductDiscardApplication>
+    public interface IStockDiscardApplication : IRepository<StockDiscardApplication>
     {
 
     }

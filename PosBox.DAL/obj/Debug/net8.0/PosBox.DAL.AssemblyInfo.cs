@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosBox.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bd99e6ed45d8d7324504241cd2d097f5f5c2c5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef16619f550d24f501a9a7a75b9d0318df915a21")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosBox.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosBox.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

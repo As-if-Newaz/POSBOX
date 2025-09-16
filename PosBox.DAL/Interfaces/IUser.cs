@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Interfaces
 {
@@ -14,5 +15,8 @@ namespace PosBox.DAL.Interfaces
         User? Authenticate(string email, string password, out string errorMsg);
         User? GetByEmail(string email);
         IEnumerable<User> SearchUsers(string searchTerm);
+        bool UpdateUserStatus(int userId, UserStatus status);
+        bool UpdateUserRole(int userId, UserRole role);
+        bool UpdatePreferences(int userId, Language language, Theme theme);
     }
 }

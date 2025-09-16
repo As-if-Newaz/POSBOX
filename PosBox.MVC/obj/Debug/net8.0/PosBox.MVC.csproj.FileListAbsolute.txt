@@ -149,3 +149,4 @@ D:\Projects\PosBox\PosBox.MVC\obj\Debug\net8.0\refint\PosBox.MVC.dll
 D:\Projects\PosBox\PosBox.MVC\obj\Debug\net8.0\PosBox.MVC.pdb
 D:\Projects\PosBox\PosBox.MVC\obj\Debug\net8.0\PosBox.MVC.genruntimeconfig.cache
 D:\Projects\PosBox\PosBox.MVC\obj\Debug\net8.0\ref\PosBox.MVC.dll
+D:\Projects\PosBox\PosBox.MVC\bin\Debug\net8.0\AutoMapper.dll

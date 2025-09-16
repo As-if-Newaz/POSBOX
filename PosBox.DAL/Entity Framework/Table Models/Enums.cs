@@ -8,10 +8,23 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 {
     public class Enums
     {
+        public enum Role
+        {
+            SuperAdmin,
+            Admin,
+            Manager,
+            Business
+        }
         public enum UserRole
         {
             Admin,
             Manager
+        }
+        public enum UserStatus
+        {
+            Active,
+            Inactive,
+            Blocked
         }
         public enum Language
         {
@@ -36,7 +49,27 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
             Created,
             Deleted,
             Updated,
+        }
+        public enum Status
+        {
+            Pending,
+            Approved,
+            Rejected,
+            Completed,
+            Cancelled
+        }
 
+        public enum SellStatus
+        {
+            Sold,
+            Returned,
+            Cancelled
+        }
+
+        public enum TransactionType
+        {
+            Deposit,
+            Withdrawal
         }
     }
 }

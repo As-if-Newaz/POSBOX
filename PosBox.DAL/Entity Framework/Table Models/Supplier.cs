@@ -24,10 +24,10 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public int? PaymentDue { get; set; }
 
-        [Required]
+      
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
-        public string Remarks { get; set; }
+        public string? Remarks { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]
@@ -47,6 +47,16 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [ForeignKey("Business")]
         [Required]
         public int BusinessId { get; set; }
+
+        public virtual ICollection<EntryInvoice> EntryInvoices { get; set; }
+
+        public virtual ICollection<Stock> Stocks { get; set; }
+
+        public Supplier()
+        {
+            EntryInvoices = new HashSet<EntryInvoice>();
+            Stocks = new HashSet<Stock>();
+        }
 
     }
 }

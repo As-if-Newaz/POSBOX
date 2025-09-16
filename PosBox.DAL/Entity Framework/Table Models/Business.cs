@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PosBox.DAL.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -48,6 +49,11 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public string Password { get; set; }
 
         [Required]
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(50)]
+        public string CostCodeString { get; set; }
+
+        [Required]
         public Language PreferredLanguage { get; set; }
 
         [Required]
@@ -70,29 +76,35 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         public virtual ICollection<Customer> Customers { get; set; }
 
-        public virtual ICollection<Supplier> Suppliers { get; set; }
+        public virtual ICollection<DailyReport> DailyReports { get; set; }
 
-        public virtual ICollection<SellInvoice> Invoices { get; set; }
-
-        public virtual ICollection<Product> Products { get; set; }
-
-        public virtual ICollection<Sell> Sells { get; set; }
+        public virtual ICollection<EntryInvoice> EntryInvoices { get; set; }
 
         public virtual ICollection<QuickSell> QuickSells { get; set; }
 
-        public virtual ICollection<DailyReport> DailyReports { get; set; }
+        public virtual ICollection<Sell> Sells { get; set; }
+
+        public virtual ICollection<SellInvoice> SellInvoices { get; set; }
+
+        public virtual ICollection<Stock> Stocks { get; set; }
+
+        public virtual ICollection<StockDiscardApplication> StockDiscardApplications { get; set; }
+
+        public virtual ICollection<Supplier> Suppliers { get; set; }
 
         public virtual ICollection<Transaction> Transactions { get; set; }
 
         public Business()
         {
             Customers = new List<Customer>();
-            Suppliers = new List<Supplier>();
-            Invoices = new List<SellInvoice>();
-            Products = new List<Product>();
-            Sells = new List<Sell>();
-            QuickSells = new List<QuickSell>();
             DailyReports = new List<DailyReport>();
+            EntryInvoices = new List<EntryInvoice>();     
+            QuickSells = new List<QuickSell>();
+            Sells = new List<Sell>();
+            SellInvoices = new List<SellInvoice>();
+            Stocks = new List<Stock>();
+            StockDiscardApplications = new List<StockDiscardApplication>();
+            Suppliers = new List<Supplier>();
             Transactions = new List<Transaction>();
         }
     }

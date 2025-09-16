@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,6 +10,7 @@ using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
+    [Index(nameof(Email), IsUnique = true)]
     public class User : BaseEntity
     {
         public int Id { get; set; }
@@ -35,6 +37,9 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Required]
         public UserRole UserRole { get; set; }
+
+        [Required]
+        public UserStatus UserStatus { get; set; }
 
         [Required]
         public string Password { get; set; }

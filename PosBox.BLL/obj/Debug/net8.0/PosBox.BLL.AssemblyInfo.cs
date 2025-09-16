@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosBox.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+043c2512f817a21e8b2634618f061b94afd0f801")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef16619f550d24f501a9a7a75b9d0318df915a21")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosBox.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosBox.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

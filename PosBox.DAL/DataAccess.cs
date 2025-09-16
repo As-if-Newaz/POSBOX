@@ -47,7 +47,7 @@ namespace PosBox.DAL
             return new ProductRepository(db);
         }
 
-        public IProductDiscardApplication ProductDiscardApplicationData()
+        public IStockDiscardApplication ProductDiscardApplicationData()
         {
             return new ProductDiscardApplicationRepository(db);
         }

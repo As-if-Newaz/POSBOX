@@ -43,11 +43,11 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Required]
         public int BusinessId { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Stock> Stocks { get; set; }
 
         public EntryInvoice()
         {
-            Products = new HashSet<Product>();
+            Stocks = new HashSet<Stock>();
         }
     }
 }
