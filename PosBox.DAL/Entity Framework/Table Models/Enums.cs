@@ -46,6 +46,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public enum AuditActions
         {
             LoggedIn,
+            LoginAttempt,
             Created,
             Deleted,
             Updated,

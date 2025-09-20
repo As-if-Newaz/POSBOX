@@ -19,7 +19,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
-        public string Barcode { get; set; }
+        public string? Barcode { get; set; }
 
         [Required]
         public int WeightGramML { get; set; }
