@@ -1,4 +1,6 @@
-﻿using PosBox.DAL.Entity_Framework;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using PosBox.DAL.Entity_Framework;
 using PosBox.DAL.Entity_Framework.Table_Models;
 using PosBox.DAL.Interfaces;
 using System;
@@ -12,33 +14,74 @@ namespace PosBox.DAL.Repositories
 {
     internal class UserRepository : Repository<User>, IUser
     {
+        private readonly PasswordHasher<string> pw;
+
         public UserRepository(ApplicationDBContext db) : base(db)
         {
-
+            pw = new PasswordHasher<string>();
         }
+
         public User? Authenticate(string email, string password, out string errorMsg)
         {
-            throw new NotImplementedException();
+            errorMsg = string.Empty;
+            var user = db.Users.Where(u => u.Email == email).FirstOrDefault();
+            if (user != null)
+            {
+                var passVerification = pw.VerifyHashedPassword("", user.Password, password);
+                if (passVerification == PasswordVerificationResult.Success)
+                {
+                    return user;
+                }
+                errorMsg = "Wrong Password";
+                return null;
+            }
+            errorMsg = "User not found!";
+            return null;
         }
 
         public bool Create(User obj, out string errorMsg)
         {
-            throw new NotImplementedException();
+            errorMsg = string.Empty;
+            try
+            {
+                var hashedPassword = pw.HashPassword("", obj.Password);
+                obj.Password = hashedPassword;
+                dbSet.Add(obj);
+                if (db.SaveChanges() > 0) return true;
+                return false;
+            }
+            catch (DbUpdateException ex)
+            {
+                errorMsg = "Email is already registered!";
+                return false;
+            }
+            catch (Exception ex)
+            {
+                errorMsg = "Internal server error";
+                return false;
+            }
         }
 
         public User? GetByEmail(string email)
         {
-            throw new NotImplementedException();
+            return dbSet.AsNoTracking().FirstOrDefault(u => u.Email == email);
         }
 
         public DateTime GetLastLogin(int userId)
         {
-            throw new NotImplementedException();
+            var user = db.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+                throw new InvalidOperationException("User not found.");
+            if (!user.LastLogin.HasValue)
+                throw new InvalidOperationException("LastLogin is not set for this user.");
+            return user.LastLogin.Value;
         }
 
         public IEnumerable<User> SearchUsers(string searchTerm)
         {
-            throw new NotImplementedException();
+            return dbSet.Where(u => u.UserName.Contains(searchTerm) || u.Email.Contains(searchTerm))
+                       .AsNoTracking()
+                       .ToList();
         }
 
         public bool UpdateUserStatus(int userId, UserStatus status)

@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using PosBox.BLL.DTOs;
+using PosBox.DAL.Entity_Framework.Table_Models;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.BLL.Services
 {
@@ -18,7 +21,7 @@ namespace PosBox.BLL.Services
         {
             this.cfg = configuration;
         }
-        public string GenerateToken(UserDTO user)
+        public string GenerateUserToken(UserDTO user)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(cfg["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -41,6 +44,27 @@ namespace PosBox.BLL.Services
                 signingCredentials: credentials
             );
 
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+        public string GenerateBusinessToken(BusinessDTO business)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(cfg["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, business.Id.ToString()),
+                new Claim(ClaimTypes.Name, business.BusinessUserName),
+                new Claim(ClaimTypes.Role, UserRole.Business.ToString()),
+                new("PreferredLanguage", business.PreferredLanguage.ToString()),
+                new("PreferredTheme", business.PreferredTheme.ToString())
+            };
+            var token = new JwtSecurityToken(
+                issuer: cfg["Jwt:Issuer"],
+                audience: cfg["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddHours(3),
+                signingCredentials: credentials
+            );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }

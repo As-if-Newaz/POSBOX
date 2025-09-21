@@ -20,13 +20,14 @@ namespace PosBox.DAL.Repositories
             return db.AuditLogs.Where(u => u.PerformedById == Id);
         }
 
-        public bool RecordLog(int Id, AuditActions Action, string? Details)
+        public bool RecordLog(int Id, UserRole role, AuditActions Action, string? Details)
         {
             var auditLog = new AuditLog
             {
                 Action = Action,
                 Details = Details,
                 PerformedById = Id,
+                PerformedByRole = role,
                 PerformedAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)
             };
             db.AuditLogs.Add(auditLog);

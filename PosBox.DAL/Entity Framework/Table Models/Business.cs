@@ -1,4 +1,5 @@
-﻿using PosBox.DAL.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PosBox.DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,7 @@ using static PosBox.DAL.Entity_Framework.Table_Models.Enums;
 
 namespace PosBox.DAL.Entity_Framework.Table_Models
 {
+    [Index(nameof(BusinessUserName), IsUnique = true)]
     public class Business : BaseEntity
     {
         public int Id { get; set; }
@@ -47,6 +49,9 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         [Column(TypeName = "VARCHAR")]
         [StringLength(500)]
         public string Password { get; set; }
+
+        [Required]
+        public UserStatus BusinessStatus { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR")]

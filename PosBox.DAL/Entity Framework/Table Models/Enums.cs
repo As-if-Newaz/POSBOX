@@ -8,17 +8,13 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
 {
     public class Enums
     {
-        public enum Role
+        public enum UserRole
         {
             SuperAdmin,
             Admin,
-            Manager,
-            Business
-        }
-        public enum UserRole
-        {
-            Admin,
-            Manager
+            Manager, 
+            Business,
+            Unknown
         }
         public enum UserStatus
         {
@@ -46,6 +42,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public enum AuditActions
         {
             LoggedIn,
+            LoggedOut,
             LoginAttempt,
             Created,
             Deleted,

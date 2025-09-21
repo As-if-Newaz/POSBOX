@@ -24,7 +24,7 @@ namespace PosBox.DAL.Entity_Framework.Table_Models
         public DateTime PerformedAt { get; set; }
 
         [Required]
-        public Role PerformedByRole { get; set; }
+        public UserRole PerformedByRole { get; set; }
 
         [Required]
         public int PerformedById { get; set; }

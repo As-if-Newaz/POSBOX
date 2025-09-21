@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace PosBox.BLL.DTOs
 {
-    public class BusinessLoginDTO
+    public class LoginDTO
     {
-        [Required(ErrorMessage = "Business Name is Required!")]
+        [Required(ErrorMessage = "UserName or Email is Required!")]
         [StringLength(100)]
-        public string BusinessUserName { get; set; } = string.Empty;
+        public string Identification { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Password is Required!")]
         public string Password { get; set; } = string.Empty;

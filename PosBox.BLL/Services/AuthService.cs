@@ -29,10 +29,10 @@ namespace PosBox.BLL.Services
             return new Mapper(config);
         }
 
-        public UserDTO? Authenticate(UserLoginDTO loginData, out string errorMsg)
+        public UserDTO? AuthenticateUser(LoginDTO loginData, out string errorMsg)
         {
             errorMsg = string.Empty;
-            var user = DA.UserData().Authenticate(loginData.Email, loginData.Password, out errorMsg);
+            var user = DA.UserData().Authenticate(loginData.Identification, loginData.Password, out errorMsg);
             if (user == null)
             {
                 errorMsg = "Login Failed!, User not found";
@@ -41,12 +41,29 @@ namespace PosBox.BLL.Services
             if (user.UserStatus.Equals(UserStatus.Blocked))
             {
                 errorMsg = "User is blocked!";
-                DA.AuditData().RecordLog(user.Id, AuditActions.LoginAttempt, "Block user attempted login");
+                DA.AuditData().RecordLog(user.Id, user.UserRole, AuditActions.LoginAttempt, "Block user attempted login");
                 return null;
             }
-            DA.AuditData().RecordLog(user.Id, AuditActions.LoggedIn, "User logged in");
             return GetMapper().Map<UserDTO>(user);
 
+        }
+
+        public BusinessDTO? AuthenticateBusiness(LoginDTO loginData, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+            var business = DA.BusinessData().Authenticate(loginData.Identification, loginData.Password, out errorMsg);
+            if (business == null)
+            {
+                errorMsg = "Login Failed!, Business not found";
+                return null;
+            }
+            if(business.BusinessStatus.Equals(UserStatus.Blocked))
+            {
+                errorMsg = "Business is blocked!";
+                DA.AuditData().RecordLog(business.Id, UserRole.Business, AuditActions.LoginAttempt, "Blocked business attempted login");
+                return null;
+            }
+            return GetMapper().Map<BusinessDTO>(business);
         }
     }
 }

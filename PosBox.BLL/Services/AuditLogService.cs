@@ -29,9 +29,9 @@ namespace PosBox.BLL.Services
             });
             return new Mapper(config);
         }
-        public bool RecordLog(int userId, AuditActions action, string description)
+        public bool RecordLog(int userId, UserRole role, AuditActions action, string description)
         {
-            return DA.AuditData().RecordLog(userId, action, description);
+            return DA.AuditData().RecordLog(userId,role, action, description);
         }
 
         public bool Delete(int logId)

@@ -10,7 +10,7 @@ namespace PosBox.DAL.Interfaces
 {
     public interface IAuditLog : IRepository<AuditLog>
     {
-        bool RecordLog(int Id, AuditActions Action, string? Details);
+        bool RecordLog(int Id, UserRole role, AuditActions Action, string? Details);
 
         IEnumerable<AuditLog>? GetAuditById(int Id);
     }
