@@ -1,0 +1,137 @@
+﻿@model PosBox.BLL.DTOs.LoginDTO
+@{
+    ViewData["Title"] = "Login - PosBox";
+}
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="card-header text-center">
+            <div class="login-logo">
+                <img src="~/images/logo.svg" alt="PosBox Logo" class="img-fluid" width="180" />
+            </div>
+            <h2>Welcome back</h2>
+            <p class="mb-0">Sign in to your PosBox account</p>
+        </div>
+                <div class="card-body p-4">
+                    @if (TempData["ErrorMsg"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="bi bi-exclamation-circle me-2"></i>
+                            @TempData["ErrorMsg"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+                    @if (TempData["SuccessMsg"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="bi bi-check-circle me-2"></i>
+                            @TempData["SuccessMsg"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form asp-controller="Auth" asp-action="Login" method="post" class="needs-validation login-form" novalidate>
+                        <div class="mb-4">
+                            <label asp-for="Identification" class="form-label">Username or Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input asp-for="Identification" class="form-control" placeholder="Enter your username or email" required />
+                            </div>
+                            <span asp-validation-for="Identification" class="text-danger mt-1 small"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label asp-for="Password" class="form-label">Password</label>
+                                <a href="#" class="small text-decoration-none">Forgot password?</a>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" required />
+                                <button type="button" class="btn password-toggle" tabindex="-1">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger mt-1 small"></span>
+                        </div>
+
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe" value="true" />
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-lg login-button">
+                                Sign In <i class="bi bi-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-4">
+                    <div class="divider">OR</div>
+                    <div>
+                        <span>Don't have an account? </span>
+                        <a href="@Url.Action("Register", "User")">Register here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 text-muted small">
+                &copy; @DateTime.Now.Year PosBox. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Initialize form validation
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Auto-hide alerts after 5 seconds
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove(); 
+            });
+        }, 5000);
+
+        // Password visibility toggle
+        $(document).ready(function() {
+            $(".password-toggle").click(function() {
+                var input = $(this).parent().find("input[type='password'], input[type='text']");
+                var icon = $(this).find("i");
+                
+                if (input.attr("type") === "password") {
+                    input.attr("type", "text");
+                    icon.removeClass("bi-eye").addClass("bi-eye-slash");
+                } else {
+                    input.attr("type", "password");
+                    icon.removeClass("bi-eye-slash").addClass("bi-eye");
+                }
+            });
+        });
+
+        // Apply focus states to input groups
+        $(document).ready(function() {
+            $('.form-control').focus(function() {
+                $(this).closest('.input-group').addClass('focused');
+            }).blur(function() {
+                $(this).closest('.input-group').removeClass('focused');
+            });
+        });
+    </script>
+}

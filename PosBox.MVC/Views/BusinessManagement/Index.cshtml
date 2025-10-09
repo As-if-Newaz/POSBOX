@@ -1,0 +1,102 @@
+@model IEnumerable<PosBox.BLL.DTOs.BusinessDTO>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor  
+@{
+    ViewData["Title"] = "Manage Businesses";
+    Layout = "_AdminLayout";
+}
+
+<br />
+<br />
+<div class="navbar navbar-expand-lg navbar-light bg-secondary-subtle">
+    <button data-action="Activate" class="btn btn-success me-2"><i class="bi bi-check2-circle"></i> Activate</button>
+    <button data-action="Deactivate" class="btn btn-warning me-2"><i class="bi bi-x-square-fill"></i> Deactivate</button>
+    <button data-action="Block" class="btn btn-secondary me-2"><i class="bi bi-lock-fill"></i> Block</button>
+    <button data-action="Unblock" class="btn btn-primary me-2"><i class="bi bi-unlock-fill"></i> Unblock</button>
+    <button data-action="Delete" class="btn btn-danger"><i class="bi bi-trash-fill"></i> Delete</button>
+    <button id="createButton" class="btn btn-primary ms-auto"><i class="bi bi-window-plus"></i> Add new Business</button>
+</div>
+
+<table class="table table-bordered">  
+   <thead>  
+       <tr>  
+           <th><input type="checkbox" id="selectAll" title="Select/Deselect all"></th>  
+           <th>Name</th>  
+           <th>Created At <i class="bi bi-arrow-down"></i></th>  
+           <th>Status</th>  
+       </tr>  
+   </thead>  
+   <tbody>  
+       @foreach (var business in Model)  
+       {  
+           <tr>  
+               <td><input type="checkbox" class="select-business" value="@business.Id"></td>  
+               <td>  
+                   <div>@business.Name</div>  
+                   <div class="text-muted small">@business.Email</div>  
+                   @if (!string.IsNullOrEmpty(business.Address))  
+                   {  
+                       <div class="small">@business.Address</div>  
+                   }  
+               </td>  
+               <td>@business.CreatedAt.ToString("g")</td>  
+               <td>@business.BusinessStatus</td>  
+           </tr>  
+       }  
+   </tbody>  
+</table>  
+
+@section Scripts {  
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>  
+   <script>  
+       document.addEventListener('DOMContentLoaded', () => {  
+           const selectAll = document.getElementById('selectAll');  
+           const businessCheckboxes = document.querySelectorAll('.select-business');  
+
+           selectAll.addEventListener('change', () => {  
+               businessCheckboxes.forEach(cb => cb.checked = selectAll.checked);  
+           });  
+           
+           // Create button handler - no selection needed
+           document.getElementById('createButton').addEventListener('click', () => {
+               window.location.href = '/BusinessManagement/Create';
+           });
+
+           // Action buttons that require selection
+           document.querySelectorAll('[data-action]').forEach(btn => {  
+               btn.addEventListener('click', async () => {  
+                   const action = btn.dataset.action;  
+                   const businessIds = [...document.querySelectorAll('.select-business:checked')]  
+                       .map(el => parseInt(el.value));  
+
+                   if (!businessIds.length) {  
+                       alert('Please select at least one business.');  
+                       return;  
+                   }  
+
+                   if (!confirm(`Confirm ${action} selected businesses?`)) {  
+                       return;  
+                   }  
+
+                   try {  
+                       const response = await fetch(`/BusinessManagement/${action}`, {  
+                           method: 'POST',  
+                           headers: { 'Content-Type': 'application/json' },  
+                           body: JSON.stringify(businessIds)  
+                       });  
+
+                       const result = await response.json();  
+                       if (result.success) {  
+                           alert(result.message);  
+                           setTimeout(() => location.reload(), 1000);  
+                       } else {  
+                           alert(result.message);  
+                       }  
+                   } catch (error) {  
+                       alert('Action failed. Please try again.');  
+                       console.error(error);  
+                   }  
+               });  
+           });  
+       });  
+   </script>  
+}

@@ -1,0 +1,9 @@
+<!-- Generated PosBox SVG Logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- "POS" text -->
+  <text x="40" y="40" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#4361ee">POS</text>
+  <!-- "BOX" text -->
+  <text x="105" y="40" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#4895ef">BOX</text>
+  <!-- Box outline -->
+  <rect x="10" y="10" width="180" height="40" rx="5" ry="5" stroke="#4361ee" stroke-width="3" fill="none" />
+</svg>

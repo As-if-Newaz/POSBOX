@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4 text-danger">Error</h1>
+    <p class="lead">An error occurred while processing your request.</p>
+    <hr />
+    <p>Please try again later or contact support if the problem persists.</p>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Return to Home</a>
+</div>

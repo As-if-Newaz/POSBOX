@@ -1,0 +1,297 @@
+@model PosBox.BLL.DTOs.UserDTO
+@{
+    ViewData["Title"] = "Register - PosBox";
+    Layout = "_LoginLayout";
+}
+
+@using static PosBox.DAL.Entity_Framework.Table_Models.Enums
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="card-header text-center">
+            <div class="login-logo">
+                <img src="~/images/logo.svg" alt="PosBox Logo" class="img-fluid" width="180" />
+            </div>
+            <h2>Create Account</h2>
+            <p class="mb-0">Join PosBox to manage your business</p>
+        </div>
+        <div class="card-body p-4">
+            @if (TempData["ErrorMsg"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-circle me-2"></i>
+                    @TempData["ErrorMsg"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["SuccessMsg"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle me-2"></i>
+                    @TempData["SuccessMsg"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form asp-controller="User" asp-action="Register" method="post" class="needs-validation login-form" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="UserName" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input asp-for="UserName" class="form-control" placeholder="Enter username" required />
+                        </div>
+                        <span asp-validation-for="UserName" class="text-danger mt-1 small"></span>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <input asp-for="Email" type="email" class="form-control" placeholder="Enter email" required />
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger mt-1 small"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Phone" class="form-label">Phone</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                            <input asp-for="Phone" class="form-control" placeholder="Enter phone number" required />
+                        </div>
+                        <span asp-validation-for="Phone" class="text-danger mt-1 small"></span>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="UserRole" class="form-label">Role</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                            <select asp-for="UserRole" class="form-select" required>
+                                <option value="">Select Role</option>
+                                <option value="@UserRole.Admin">Admin</option>
+                                <option value="@UserRole.Manager">Manager</option>
+                                <option value="@UserRole.Business">Business Owner</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="UserRole" class="text-danger mt-1 small"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Address" class="form-label">Address</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <input asp-for="Address" class="form-control" placeholder="Enter address" required />
+                    </div>
+                    <span asp-validation-for="Address" class="text-danger mt-1 small"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="PreferredLanguage" class="form-label">Language</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-translate"></i></span>
+                            <select asp-for="PreferredLanguage" class="form-select" required>
+                                <option value="">Select Language</option>
+                                <option value="@Language.English">English</option>
+                                <option value="@Language.Bangla">Bangla</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="PreferredLanguage" class="text-danger mt-1 small"></span>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="PreferredTheme" class="form-label">Theme</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-palette"></i></span>
+                            <select asp-for="PreferredTheme" class="form-select" required>
+                                <option value="">Select Theme</option>
+                                <option value="@Theme.Light">Light</option>
+                                <option value="@Theme.Dark">Dark</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="PreferredTheme" class="text-danger mt-1 small"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <input asp-for="Password" id="password" type="password" class="form-control" placeholder="Enter password" required minlength="6" />
+                        <button type="button" class="btn password-toggle" tabindex="-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger mt-1 small"></span>
+                    <div id="passwordStrength" class="mt-2 progress" style="height: 5px; display: none;">
+                        <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    <small id="passwordFeedback" class="form-text text-muted"></small>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm password" required />
+                        <button type="button" class="btn password-toggle" tabindex="-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div id="passwordMatch" class="mt-1 small"></div>
+                </div>
+
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required />
+                    <label class="form-check-label" for="termsCheck">
+                        I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>
+                    </label>
+                </div>
+                
+                <!-- Hidden fields for required data -->
+                <input asp-for="UserStatus" type="hidden" value="@UserStatus.Inactive" />
+                <input asp-for="CreatedAt" type="hidden" value="@DateTime.Now" />
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-lg login-button">
+                        Create Account <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center py-4">
+            <div>
+                <span>Already have an account? </span>
+                <a href="@Url.Action("Login", "Auth")">Sign in</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4 text-muted small">
+        &copy; @DateTime.Now.Year PosBox. All rights reserved.
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Initialize form validation
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Auto-hide alerts after 5 seconds
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove(); 
+            });
+        }, 5000);
+
+        // Password visibility toggle
+        $(document).ready(function() {
+            $(".password-toggle").click(function() {
+                var input = $(this).parent().find("input[type='password'], input[type='text']");
+                var icon = $(this).find("i");
+                
+                if (input.attr("type") === "password") {
+                    input.attr("type", "text");
+                    icon.removeClass("bi-eye").addClass("bi-eye-slash");
+                } else {
+                    input.attr("type", "password");
+                    icon.removeClass("bi-eye-slash").addClass("bi-eye");
+                }
+            });
+
+            // Password strength meter
+            $('#password').on('input', function() {
+                var password = $(this).val();
+                var strength = 0;
+                var feedback = "";
+                
+                if (password.length > 0) {
+                    $('#passwordStrength').show();
+                    
+                    // Length check
+                    if (password.length >= 8) {
+                        strength += 25;
+                    }
+                    
+                    // Contains uppercase
+                    if (/[A-Z]/.test(password)) {
+                        strength += 25;
+                    }
+                    
+                    // Contains number
+                    if (/[0-9]/.test(password)) {
+                        strength += 25;
+                    }
+                    
+                    // Contains special character
+                    if (/[^A-Za-z0-9]/.test(password)) {
+                        strength += 25;
+                    }
+                    
+                    var progressBar = $('#passwordStrength .progress-bar');
+                    progressBar.css('width', strength + '%');
+                    
+                    if (strength < 25) {
+                        progressBar.removeClass().addClass('progress-bar bg-danger');
+                        feedback = "Very weak password";
+                    } else if (strength < 50) {
+                        progressBar.removeClass().addClass('progress-bar bg-warning');
+                        feedback = "Weak password";
+                    } else if (strength < 75) {
+                        progressBar.removeClass().addClass('progress-bar bg-info');
+                        feedback = "Moderate password";
+                    } else {
+                        progressBar.removeClass().addClass('progress-bar bg-success');
+                        feedback = "Strong password";
+                    }
+                    
+                    $('#passwordFeedback').text(feedback);
+                } else {
+                    $('#passwordStrength').hide();
+                    $('#passwordFeedback').text('');
+                }
+            });
+
+            // Password match check
+            $('#confirmPassword').on('input', function() {
+                var password = $('#password').val();
+                var confirmPassword = $(this).val();
+                
+                if (confirmPassword.length > 0) {
+                    if (password === confirmPassword) {
+                        $('#passwordMatch').removeClass('text-danger').addClass('text-success').text('Passwords match');
+                    } else {
+                        $('#passwordMatch').removeClass('text-success').addClass('text-danger').text('Passwords do not match');
+                    }
+                } else {
+                    $('#passwordMatch').text('');
+                }
+            });
+
+            // Apply focus states to input groups
+            $('.form-control').focus(function() {
+                $(this).closest('.input-group').addClass('focused');
+            }).blur(function() {
+                $(this).closest('.input-group').removeClass('focused');
+            });
+
+            // Set UserStatus as Inactive by default (hidden field)
+            $('#UserStatus').val('@UserStatus.Inactive');
+        });
+    </script>
+}

@@ -1,0 +1,157 @@
+﻿@model PosBox.BLL.DTOs.BusinessDTO
+@using static PosBox.DAL.Entity_Framework.Table_Models.Enums
+@using System.Security.Claims
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Create Business";
+    Layout = "_AdminLayout";
+}
+
+<h1>Create</h1>
+
+<h4>BusinessDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" id="createBusinessForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Add hidden fields for required properties -->
+            <input asp-for="CreatedBy" type="hidden" value="@(User.FindFirst(ClaimTypes.Name)?.Value ?? "Admin")" />
+            <input asp-for="CreatedAt" type="hidden" value="@DateTime.UtcNow" />
+            <input asp-for="IsDeleted" type="hidden" value="false" />
+            
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="logoFile" class="control-label">Logo Image</label>
+                <input type="file" id="logoFile" name="logoFile" class="form-control" accept="image/*" />
+                <input asp-for="LogoImageUrl" type="hidden" />
+                <span asp-validation-for="LogoImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BusinessUserName" class="control-label"></label>
+                <input asp-for="BusinessUserName" class="form-control" />
+                <span asp-validation-for="BusinessUserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BusinessStatus" class="control-label"></label>
+                <select asp-for="BusinessStatus" class="form-control">
+                    <option value="">Select Status</option>
+                    <option value="@UserStatus.Active">Active</option>
+                    <option value="@UserStatus.Inactive">Inactive</option>
+                    <option value="@UserStatus.Blocked">Blocked</option>
+                </select>
+                <span asp-validation-for="BusinessStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostCodeString" class="control-label"></label>
+                <input asp-for="CostCodeString" class="form-control" />
+                <span asp-validation-for="CostCodeString" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreferredLanguage" class="control-label"></label>
+                <select asp-for="PreferredLanguage" class="form-control">
+                    <option value="">Select Language</option>
+                    <option value="@Language.English">English</option>
+                    <option value="@Language.Bangla">Bangla</option>
+                </select>
+                <span asp-validation-for="PreferredLanguage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreferredTheme" class="control-label"></label>
+                <select asp-for="PreferredTheme" class="form-control">
+                    <option value="">Select Theme</option>
+                    <option value="@Theme.Light">Light</option>
+                    <option value="@Theme.Dark">Dark</option>
+                </select>
+                <span asp-validation-for="PreferredTheme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cash" class="control-label"></label>
+                <input asp-for="Cash" class="form-control" />
+                <span asp-validation-for="Cash" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" id="createBusinessBtn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(function() {
+            $("form").submit(function(e) {
+                e.preventDefault();
+                
+                // Check for client-side validation errors
+                if (!$(this).valid()) {
+                    alert("Please fix the validation errors before submitting.");
+                    return;
+                }
+                
+                var form = $(this);
+                var formData = new FormData(form[0]);
+                
+
+                
+                // Show loading indicator
+                var submitBtn = form.find('input[type="submit"]');
+                var originalBtnText = submitBtn.val();
+                submitBtn.val("Processing...").prop("disabled", true);
+                
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if (response && response.success === true) {
+                            alert(response.message || "Business created successfully!");
+                            window.location.href = '@Url.Action("Index")';
+                        } else {
+                            alert(response.message || "An error occurred. Please try again.");
+                            submitBtn.val(originalBtnText).prop("disabled", false);
+                            
+
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert("An error occurred during form submission. Please try again.");
+                        submitBtn.val(originalBtnText).prop("disabled", false);
+                    }
+                });
+            });
+        });
+    </script>
+}
