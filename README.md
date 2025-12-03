@@ -2,13 +2,7 @@
 
 An ASP .NET Core N-tier POS (Point Of Sale) web application.
 
-## Getting Started
-
-1. Clone the repository
-2. Set up your environment variables for secrets (see [Managing Secrets](docs/SECRETS.md))
-3. Restore NuGet packages: `dotnet restore`
-4. Set up the database: `dotnet ef database update`
-5. Run the application: `dotnet run --project PosBox.MVC`
+environment variables for secrets (see [Managing Secrets](docs/SECRETS.md))
 
 ## Project Structure
 
